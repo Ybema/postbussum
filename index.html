@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installatie Buro Post – Erkend Installateur Bussum</title>
+  <meta name="description" content="Technisch Buro Post in Bussum: erkend elektrotechnisch installateur en verlichtingswinkel. Laadpalen, zonnepanelen, meterkast, verlichting en meer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- TOP BAR: dual business units -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="#installatie" class="biz-unit">
+      <span class="biz-icon">🔌</span>
+      <div class="biz-label">
+        <span class="biz-name">Installatie Buro</span>
+        <span class="biz-hours">Ma – Vr &nbsp;08:00 – 16:00</span>
+      </div>
+    </a>
+    <a href="#winkel" class="biz-unit">
+      <span class="biz-icon">💡</span>
+      <div class="biz-label">
+        <span class="biz-name">Verlichtingswinkel</span>
+        <span class="biz-hours">Ma – Vr &nbsp;09:00 – 18:00 &nbsp;·&nbsp; Za &nbsp;09:00 – 17:00</span>
+      </div>
+    </a>
+    <a href="tel:0356914929" class="top-phone">035-6914929</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#home">
+      <img src="images/logo.webp" alt="Technisch Buro Post" class="nav-logo-img" />
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#installatie">Installatie Buro</a></li>
+      <li><a href="#winkel">Winkel</a></li>
+      <li><a href="#vacatures">Vacatures</a></li>
+      <li><a href="#contact" class="cta-link">Contact &amp; Offerte</a></li>
+    </ul>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#installatie" onclick="closeNav()">Installatie Buro</a>
+    <a href="#winkel" onclick="closeNav()">Winkel</a>
+    <a href="#vacatures" onclick="closeNav()">Vacatures</a>
+    <a href="#contact" class="cta-mobile" onclick="closeNav()">Contact &amp; Offerte</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-photo-wrap">
+    <img src="images/installatie-hero.webp" alt="Technisch Buro Post" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">&#9889; Erkend installateur &middot; Bussum</div>
+    <h1>Uw vakman voor<br><span>elektra &amp; verlichting</span></h1>
+    <p class="hero-subtitle">Van laadpaal tot meterkast, van lichtadvies tot complete installaties. Al jaren een begrip in 't Gooi.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Vraag een offerte aan</a>
+      <a href="tel:0356914929" class="btn-ghost">Bel 035-6914929</a>
+    </div>
+  </div>
+</section>
+
+<!-- DIENSTEN OVERVIEW -->
+<section id="diensten">
+  <div class="container">
+    <div class="diensten-grid">
+
+      <div class="dienst-card">
+        <div class="dienst-card-top">
+          <img src="images/installatie.webp" alt="Installatie Buro" />
+          <div class="card-icon">🔌</div>
+        </div>
+        <div class="dienst-card-body">
+          <h3>Installatie Buro</h3>
+          <p>Erkende elektromonteurs voor thuis of op het werk. Meterkast, laadpaal, zonnepanelen, nieuwbouw en VVE-onderhoud.</p>
+          <div class="hours">Ma &ndash; Vr: 08:00 &ndash; 16:00 &nbsp;|&nbsp; Za &ndash; Zo: Gesloten</div>
+          <a href="#installatie" class="card-link">Meer informatie &rarr;</a>
+        </div>
+      </div>
+
+      <div class="dienst-card">
+        <div class="dienst-card-top">
+          <img src="images/winkel.webp" alt="Verlichtingswinkel" />
+          <div class="card-icon">&#128161;</div>
+        </div>
+        <div class="dienst-card-body">
+          <h3>Verlichtingswinkel</h3>
+          <p>Persoonlijk lichtadvies en een ruim assortiment armaturen, schakelmateriaal en alles op elektragebied. A-merken als Philips Hue, Gira en ABB.</p>
+          <div class="hours">Ma &ndash; Vr: 09:00 &ndash; 18:00 &nbsp;|&nbsp; Za: 09:00 &ndash; 17:00</div>
+          <a href="#winkel" class="card-link">Bekijk de winkel &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- INSTALLATIE BURO -->
+<section id="installatie">
+  <div class="container">
+    <div class="split-layout">
+
+      <div class="split-img">
+        <img src="images/installatie.webp" alt="Elektrotechnische installatie werkzaamheden" />
+      </div>
+
+      <div class="split-content">
+        <span class="section-label">🔌 Installatie Buro</span>
+        <h2>Elektra voor thuis &amp; bedrijf</h2>
+        <p style="margin-bottom:28px;">Wij verzorgen de elektra binnen en buiten uw woning, bedrijfsruimte of winkel. Advies, installatie en nazorg — door ervaren vakmensen.</p>
+
+        <div class="service-chips">
+          <span class="chip">Meterkast vervangen</span>
+          <span class="chip">Zonnepanelen</span>
+          <span class="chip">Laadpaal installatie</span>
+          <span class="chip">Verlichting ophangen</span>
+          <span class="chip">Elektra nazien</span>
+          <span class="chip">Nieuwbouw projecten</span>
+          <span class="chip">VVE onderhoud</span>
+          <span class="chip">Verbouw &amp; renovatie</span>
+        </div>
+
+        <div class="rate-card">
+          <div class="price-row">
+            <span class="price">&euro; 82,50</span>
+            <span class="price-unit">ex btw / uur</span>
+          </div>
+          <div class="price-note">Exclusief materiaalkosten &middot; Eerste uur altijd volledig in rekening</div>
+          <div class="rate-card-actions">
+            <a href="tel:0356914929" class="btn-amber-sm">Bel voor afspraak</a>
+            <a href="#contact" class="btn-outline-sm">Offerte aanvragen</a>
+          </div>
+        </div>
+
+        <div class="alert-strip">
+          <strong>Geen storingsdienst buiten kantooruren</strong>
+          <p>Vanaf 21 oktober 2024 geen bereikbaarheid buiten Ma–Vr 08:00–16:00. Bel 035-6914929 of mail <a href="mailto:planning@postbussum.nl" style="color:var(--amber-dark)">planning@postbussum.nl</a>.</p>
+        </div>
+
+        <div class="hours-block">
+          <h4>Openingstijden installatie buro</h4>
+          <table class="hours-table">
+            <tr><td>Maandag – Vrijdag</td><td>08:00 – 16:00</td></tr>
+            <tr><td>Zaterdag</td><td class="closed">Gesloten</td></tr>
+            <tr><td>Zondag</td><td class="closed">Gesloten</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WINKEL -->
+<section id="winkel">
+  <div class="container">
+
+    <div class="winkel-header">
+      <img src="images/winkel.webp" alt="Verlichtingswinkel Technisch Buro Post" />
+      <div class="winkel-header-overlay">
+        <div class="winkel-header-text">
+          <span class="section-label">💡 Verlichtingswinkel</span>
+          <h2>Licht dat bij u past</h2>
+          <p>6 dagen per week open voor lichtadvies, armaturen en schakelmateriaal.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="brands-section-title">Onze vaste leveranciers</p>
+    <div class="logo-grid">
+      <div class="logo-item" style="background:#1B2A4A;"><img src="images/brand-philips-hue.svg" alt="Philips Hue" /></div>
+      <div class="logo-item"><img src="images/brand-gira.svg" alt="Gira" /></div>
+      <div class="logo-item"><img src="images/brand-jung.svg" alt="Jung" /></div>
+      <div class="logo-item"><img src="images/brand-busch-jaeger.svg" alt="Busch-Jaeger" /></div>
+      <div class="logo-item"><img src="images/brand-abb.svg" alt="ABB" /></div>
+      <div class="logo-item"><img src="images/brand-eglo.png" alt="Eglo" /></div>
+      <div class="logo-item"><img src="images/brand-steinhauer.png" alt="Steinhauer" /></div>
+      <div class="logo-item"><img src="images/brand-highlight.svg" alt="Highlight" /></div>
+      <div class="logo-item"><img src="images/brand-romi.svg" alt="It's about RoMi" /></div>
+      <div class="logo-item"><img src="images/brand-good-mojo.svg" alt="Good MoJo" /></div>
+      <div class="logo-item"><img src="images/brand-lucide.png" alt="Lucide" /></div>
+      <div class="logo-item" style="background:#1B2A4A;"><img src="images/brand-trio.svg" alt="Trio Lighting" /></div>
+      <div class="logo-item"><img src="images/brand-freelight.svg" alt="Freelight" /></div>
+      <div class="logo-item"><img src="images/brand-holtkotter.svg" alt="Holtkötter" /></div>
+      <div class="logo-item"><img src="images/brand-masterlight.svg" alt="Masterlight" /></div>
+      <div class="logo-item"><img src="images/brand-present-time.svg" alt="Present Time" /></div>
+      <div class="logo-item"><img src="images/brand-artisans.svg" alt="Artisans" /></div>
+      <div class="logo-item" style="background:var(--gray-50);border-style:dashed;"><span style="font-size:0.78rem;color:var(--gray-400);text-align:center;">+ meer in de winkel</span></div>
+    </div>
+
+    <div class="winkel-info-grid">
+      <div class="info-card">
+        <div class="info-card-icon">💳</div>
+        <h4>Betaalmiddelen</h4>
+        <ul>
+          <li>Contant (graag gepast)</li>
+          <li>Pin / contactloos</li>
+          <li>Geen creditcard</li>
+          <li>Geen &euro;100, &euro;200 of &euro;500 biljetten</li>
+          <li>Terugbetaling via administratie</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🔄</div>
+        <h4>Ruilen &amp; Retour</h4>
+        <ul>
+          <li>Ruilen binnen 5 dagen na aankoop</li>
+          <li>Originele kassabon verplicht</li>
+          <li>Ongebruikt, originele verpakking</li>
+          <li>Speciaal besteld: niet retourneerbaar</li>
+          <li>Meterkast onderdelen: niet retour</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🕐</div>
+        <h4>Openingstijden winkel</h4>
+        <table class="hours-table">
+          <tr><td>Maandag – Vrijdag</td><td>09:00 – 18:00</td></tr>
+          <tr><td>Zaterdag</td><td>09:00 – 17:00</td></tr>
+          <tr><td>Zondag</td><td class="closed">Gesloten</td></tr>
+        </table>
+        <p style="margin-top:16px;font-size:0.83rem;">
+          <a href="tel:0356914929" style="color:var(--amber-dark);font-weight:600">035-6914929</a> (keuze 1)<br>
+          <a href="mailto:winkel@postbussum.nl" style="color:var(--amber-dark);font-weight:600">winkel@postbussum.nl</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VACATURES -->
+<section id="vacatures">
+  <div class="container">
+    <div class="section-intro">
+      <span class="section-label">Vacatures</span>
+      <h2>Word onderdeel van ons team</h2>
+      <p>Wij zoeken een gedreven elektromonteur voor zelfstandig werk bij particulieren en bedrijven.</p>
+    </div>
+
+    <div class="vacancy-wrap">
+      <div class="vacancy-main">
+        <span class="vacancy-tag">Fulltime &middot; Bussum</span>
+        <h3>Elektromonteur</h3>
+        <p>Zelfstandig aanleggen van elektrotechnische installaties bij particulieren en bedrijven — verbouw, nieuwbouw en renovatie.</p>
+
+        <p class="vacancy-col-label">Wat wij vragen</p>
+        <ul class="req-list">
+          <li>Diploma elektromonteur MBO niveau</li>
+          <li>VCA-diploma (of bereid dit te halen)</li>
+          <li>Zelfstandig kunnen werken</li>
+          <li>Nederlands spreken en schrijven</li>
+          <li>Rijbewijs B</li>
+        </ul>
+
+        <p class="vacancy-col-label">Wat wij bieden</p>
+        <ul class="offer-list">
+          <li>Klein, gemotiveerd en professioneel team</li>
+          <li>Volledig uitgeruste werkbus</li>
+          <li>Uitdagende fulltime baan met veel zelfstandigheid</li>
+          <li>Goed CAO en goede pensioenregeling</li>
+          <li>24 vakantiedagen per jaar + ADV dagen</li>
+        </ul>
+
+        <div class="apply-box">
+          <p>Geïnteresseerd? Neem contact op met dhr. M. Kemperman:</p>
+          <a href="mailto:info@postbussum.nl" class="btn-primary">Solliciteer via e-mail</a>
+        </div>
+      </div>
+
+      <div class="zzp-card">
+        <div class="zzp-icon">🚐</div>
+        <h3>Van ZZP naar meer zekerheid?</h3>
+        <p>Overweeg je de stap naar loondienst vanwege de nieuwe wetgeving van 2025? Bij ons heb je de zekerheid van een vast contract met aantrekkelijke arbeidsvoorwaarden — goede pensioenregeling, 24 vakantiedagen en ADV.</p>
+        <p style="margin-bottom:24px;margin-top:12px;">Net zo leuk werk, met een stuk meer zekerheid.</p>
+        <a href="mailto:info@postbussum.nl">Neem contact op &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-details">
+        <span class="section-label">Contact</span>
+        <h2>Neem contact op</h2>
+        <p>Voor een afspraak, informatie of een vrijblijvende offerte. Wij reageren zo snel mogelijk.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <h4>Adres</h4>
+            <p>Huizerweg 68<br>1402 AE Bussum</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <h4>Telefoon</h4>
+            <a href="tel:0356914929">035-6914929</a>
+            <p style="font-size:0.82rem;margin-top:4px;">Keuze 1 &rarr; Winkel &nbsp;|&nbsp; Keuze 2 &rarr; Installatie buro</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <h4>E-mail</h4>
+            <a href="mailto:planning@postbussum.nl">planning@postbussum.nl</a><br>
+            <a href="mailto:winkel@postbussum.nl">winkel@postbussum.nl</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🏢</div>
+          <div>
+            <h4>Bedrijfsgegevens</h4>
+            <p>KVK: 57431701<br>BTW: NL852577424B01</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>Stuur ons een bericht</h3>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="naam">Naam</label>
+              <input type="text" id="naam" name="naam" placeholder="Uw naam" required />
+            </div>
+            <div class="form-group">
+              <label for="telefoon">Telefoon</label>
+              <input type="tel" id="telefoon" name="telefoon" placeholder="06-..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="u@voorbeeld.nl" required />
+          </div>
+          <div class="form-group">
+            <label for="onderwerp">Onderwerp</label>
+            <select id="onderwerp" name="onderwerp">
+              <option value="">Selecteer...</option>
+              <option>Afspraak maken</option>
+              <option>Offerte aanvragen</option>
+              <option>Vraag over installatie</option>
+              <option>Vraag over de winkel</option>
+              <option>Overig</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" placeholder="Beschrijf uw vraag of werkzaamheden..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Verstuur bericht &rarr;</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo.webp" alt="Technisch Buro Post" class="footer-logo" />
+        <p>Al jaren uw erkend elektrotechnisch installateur en verlichtingsspecialist in Bussum en de regio 't Gooi.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#installatie">Installatie Buro</a></li>
+          <li><a href="#winkel">Winkel</a></li>
+          <li><a href="#vacatures">Vacatures</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Huizerweg 68, 1402 AE Bussum</li>
+          <li><a href="tel:0356914929">035-6914929</a></li>
+          <li><a href="mailto:planning@postbussum.nl">planning@postbussum.nl</a></li>
+          <li><a href="mailto:winkel@postbussum.nl">winkel@postbussum.nl</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Technisch Buro Post &middot; KVK 57431701</span>
+      <span><a href="https://www.postbussum.nl">postbussum.nl</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  const menu = document.getElementById('mobileMenu');
+  const btn = document.getElementById('hamburger');
+  menu.classList.toggle('open');
+  btn.classList.toggle('open');
+}
+function closeNav() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-submit');
+  btn.textContent = 'Verstuurd! Wij nemen zo snel mogelijk contact op.';
+  btn.style.background = '#2d7d46';
+  btn.style.color = 'white';
+  btn.disabled = true;
+}
+document.addEventListener('click', function(e) {
+  const nav = document.getElementById('mainNav');
+  if (!nav.contains(e.target)) closeNav();
+});
+</script>
+</body>
+</html>
