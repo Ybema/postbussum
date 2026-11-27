@@ -159,6 +159,75 @@ nav {
 }
 .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
 
+/* === HERO INFO CARDS === */
+.hero-cards-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+  max-width: 640px;
+}
+
+.hic {
+  background: rgba(255,255,255,0.96);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  border-top: 3px solid var(--amber);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.20);
+}
+
+.hic-top {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.hic-icon { font-size: 1.1rem; line-height: 1; }
+
+.hic-top strong {
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.hic-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.81rem;
+  margin-bottom: 13px;
+}
+
+.hic-tbl td {
+  padding: 2px 0;
+  color: var(--gray-800);
+  vertical-align: top;
+}
+
+.hic-tbl td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.hic-closed { color: var(--gray-400) !important; font-weight: 400 !important; }
+
+.hic-call {
+  display: block;
+  font-weight: 700;
+  font-size: 0.86rem;
+  color: var(--navy);
+  padding-top: 11px;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  transition: color 0.2s;
+}
+
+.hic-call:hover { color: var(--amber-dark); }
+
+@media (max-width: 540px) {
+  .hero-cards-row { grid-template-columns: 1fr; gap: 10px; max-width: 100%; margin-top: 28px; }
+}
+
 .hero-stats {
   display: flex; gap: 48px; margin-top: 72px; padding-top: 40px;
   border-top: 1px solid rgba(255,255,255,0.15); flex-wrap: wrap;
